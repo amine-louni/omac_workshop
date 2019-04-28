@@ -80,11 +80,24 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     new cleanWebPackPlugin(),
+
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
@@ -108,17 +121,17 @@ module.exports = {
     }),
     new htmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "index.html",
+      filename: "index.html"
 
       //For production
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      }
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
     }),
 
     new ImageminPlugin({

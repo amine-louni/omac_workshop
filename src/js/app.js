@@ -1,5 +1,6 @@
 import "../sass/main.scss";
 import "jquery";
+import "slick-carousel";
 import "bootstrap";
 
 import { WOW } from "wowjs";
@@ -17,4 +18,3 @@ export default {
   }
 };
 new WOW().init();
- 

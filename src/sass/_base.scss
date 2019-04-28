@@ -1,73 +1,55 @@
-/*
-COLORS
+// /*
+// COLORS
 
-Primary:  
-Primary light:  
-Primary dark: 
+// Primary #26AFF0:
+// Primary light:
+// Primary dark:#2286B5
 
- 
+// grey : #2286B5
 
- 
- 
+// //FONTS
 
- 
- 
-//FONTS
+// font-family:
+// font-family:
 
-font-family:  
-font-family:  
+// BP
 
-BP
+// */
+// // Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) {
+// }
 
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) {
+// }
 
+// // Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) {
+// }
 
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) {
+// }
 
-*/
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-}
+// //colors
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-}
+$color-primary: #26aff0;
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-}
-
-//colors
-
-$color-primary: ;
-$color-primary-light: ;
-$color-primary-dark:  ;
-
- 
- 
+$color-primary-dark: #2286b5;
+$color-grey: #f9f9f9;
+$color-dark-1: #1c1d21;
+$color-dark-2: #16181d;
 
 $theme-colors: (
- 
+  "primary": $color-primary,
+  "primary-dark": $color-primary-dark,
+  "grey": $color-grey,
+  "dark": $color-dark-1,
+  "dark-2": $color-dark-2
 );
 
-//FONTS
-
-$font:  ;
-$font-display:  ;
-
-body {
-  font-family: $font;
-  
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-display;
-}
-
- 

@@ -1,0 +1,9 @@
+// INDEX.HTML
+.texto {
+  margin-top: -6rem;
+  &__heading-wrapper {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: #fff;
+    z-index: 2;
+  }
+}
