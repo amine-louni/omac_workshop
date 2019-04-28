@@ -1,1 +1,31 @@
 //HEADER STYL S
+.header {
+  .slide {
+    &__title {
+      h2 {
+        @media (max-width: 767.98px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        @media (max-width: 767.98px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  a {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}
