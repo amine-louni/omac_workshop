@@ -18,3 +18,21 @@ export default {
   }
 };
 new WOW().init();
+
+$(".header__slider").slick({
+  dots: false,
+  autoplay: true,
+  infinite: true,
+  speed: 300,
+  fade: true,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  arrows: false
+});
+$(".testi__wrapper").slick({
+  dots: true,
+
+  speed: 300,
+
+  slidesToShow: 1
+});
