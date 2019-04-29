@@ -133,6 +133,20 @@ module.exports = {
       //     useShortDoctype: true
       //   }
     }),
+    new htmlWebpackPlugin({
+      template: "./src/about.html",
+      filename: "about.html"
+
+      //For production
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
+    }),
 
     new htmlWebpackPlugin({
       template: "./src/portfolio.html",
