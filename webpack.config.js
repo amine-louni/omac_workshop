@@ -134,6 +134,21 @@ module.exports = {
       //   }
     }),
 
+    new htmlWebpackPlugin({
+      template: "./src/portfolio.html",
+      filename: "portfolio.html"
+
+      //For production
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
+    }),
+
     new ImageminPlugin({
       bail: false, // Ignore errors on corrupted images
       cache: true,

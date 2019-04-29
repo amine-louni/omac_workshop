@@ -4,6 +4,7 @@ import "slick-carousel";
 import "bootstrap";
 
 import { WOW } from "wowjs";
+import mixitup from "mixitup";
 
 // init wow js [webpack require that]
 export default {
@@ -35,4 +36,15 @@ $(".testi__wrapper").slick({
   speed: 300,
 
   slidesToShow: 1
+});
+
+// //init mixitup js
+var mixer = mixitup(".works-wrapper");
+
+// //shifter
+$(".filter-btn").on("click", function() {
+  $(this)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
 });
