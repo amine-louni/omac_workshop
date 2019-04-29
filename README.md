@@ -38,6 +38,8 @@
 - [bootstrap](https://getbootstrap.com/)
 - [jquery](https://jquery.com)
 - [wow.js](https://wowjs.uk/)
+- [mixitup](https://www.kunkalabs.com/mixitup/)
+- [slick](https://kenwheeler.github.io/slick/)
 
 ## Contributing
 
