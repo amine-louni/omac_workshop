@@ -5,7 +5,6 @@ import "bootstrap";
 
 import { WOW } from "wowjs";
 import mixitup from "mixitup";
-
 // init wow js [webpack require that]
 export default {
   init() {
@@ -13,38 +12,39 @@ export default {
     const wow = new WOW();
 
     wow.init();
-  },
-  finalize() {
-    // JavaScript to be fired on all pages, after page specific JS is fired
   }
 };
-new WOW().init();
+$(function() {
+  new WOW().init();
+  $(".header__slider").slick({
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    speed: 300,
+    fade: true,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false
+  });
+  $(".testi__wrapper").slick({
+    dots: true,
 
-$(".header__slider").slick({
-  dots: false,
-  autoplay: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  arrows: false
-});
-$(".testi__wrapper").slick({
-  dots: true,
+    speed: 300,
 
-  speed: 300,
+    slidesToShow: 1
+  });
+  $(window).on("load", function() {
+    $(".main-loader").fadeOut(500);
+  });
 
-  slidesToShow: 1
-});
+  // //init mixitup js
+  var mixer = mixitup(".works-wrapper");
 
-// //init mixitup js
-var mixer = mixitup(".works-wrapper");
-
-// //shifter
-$(".filter-btn").on("click", function() {
-  $(this)
-    .addClass("active")
-    .siblings()
-    .removeClass("active");
+  // //shifter
+  $(".filter-btn").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
 });
