@@ -3,7 +3,7 @@
 > omac workshop (group 3)
 
 `core` is a simple web site page for static content. It was created as the basis for omac workshops The implementation strives to be simple and free of unnecessary dependencies.
-
+## Demo [click here](https://omac-core.netlify.com/)
 ## Goals
 
 - improve team collaboration skills.
@@ -19,7 +19,7 @@
 - `src/sass/` Implementation of sass code
 - `src/assets/img/` images and svg
 - `src/js/` javascript files
-- `build` the production directory
+- `/build` the production directory
 - `/node_modules` a simple or complex functionality organized in single or multiple JavaScript files which can be reused throughout the Node.js application
 
 ## Instructions for team members
