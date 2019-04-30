@@ -19,6 +19,7 @@
 - `src/sass/` Implementation of sass code
 - `src/assets/img/` images and svg
 - `src/js/` javascript files
+- `build` the production directory
 - `/node_modules` a simple or complex functionality organized in single or multiple JavaScript files which can be reused throughout the Node.js application
 
 ## Instructions for team members
