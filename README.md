@@ -40,6 +40,34 @@
 - [wow.js](https://wowjs.uk/)
 - [mixitup](https://www.kunkalabs.com/mixitup/)
 - [slick](https://kenwheeler.github.io/slick/)
+## dev depencies
+   - @babel/core  
+   - @babel/preset-env 
+   - autoprefixer 
+   - babel-loader 
+   - clean-webpack-plugin 
+   - css-loader 
+   - exports-loader 
+   - extract-text-webpack-plugi 
+   - file-loader 
+   - html-loade 
+   - html-webpack-plugin 
+   - imagemin-gifsicle 
+   - imagemin-jpegtran 
+   - imagemin-optipng 
+   - imagemin-svgo 
+   - imagemin-webpack  
+   - imports-loader 
+   - mini-css-extract-plugin 
+   - node-sass 
+   - optimize-css-assets-webpack-plugi 
+   - postcss-loader 
+   - sass-loader 
+   - style-loader 
+   - svg-spritemap-webpack-plugin 
+   - webpack 
+   - webpack-cli 
+   - webpack-dev-server 
 
 ## Contributing
 
