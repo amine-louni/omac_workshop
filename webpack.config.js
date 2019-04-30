@@ -162,6 +162,20 @@ module.exports = {
       //     useShortDoctype: true
       //   }
     }),
+    new htmlWebpackPlugin({
+      template: "./src/pricing.html",
+      filename: "pricing.html"
+
+      //For production
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
+    }),
 
     new ImageminPlugin({
       bail: false, // Ignore errors on corrupted images
