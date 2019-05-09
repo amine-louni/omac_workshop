@@ -148,6 +148,36 @@ module.exports = {
       //   }
     }),
 
+ new htmlWebpackPlugin({
+      template: "./src/services.html",
+      filename: "services.html"
+
+      //For production
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
+    }),
+
+  new htmlWebpackPlugin({
+      template: "./src/contact.html",
+      filename: "contact.html"
+
+      //For production
+      //   minify: {
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //     removeRedundantAttributes: true,
+      //     removeScriptTypeAttributes: true,
+      //     removeStyleLinkTypeAttributes: true,
+      //     useShortDoctype: true
+      //   }
+    }),
+
     new htmlWebpackPlugin({
       template: "./src/portfolio.html",
       filename: "portfolio.html"
