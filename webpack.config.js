@@ -236,7 +236,7 @@ module.exports = {
     }),
 
     new ImageminPlugin({
-      bail: false, // Ignore errors on corrupted images
+      bail: false, // Ignore errors on corru pted images
       cache: true,
       imageminOptions: {
         // Lossless optimization with custom option
